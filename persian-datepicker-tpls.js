@@ -246,7 +246,7 @@ angular.module('ui.bootstrap.persian.datepicker', ['ui.bootstrap.dateparser', 'u
     controller: 'ui.bootstrap.persian.datepicker.DatepickerController',
     link: function(scope, element, attrs, ctrls) {
       var datepickerCtrl = ctrls[0], ngModelCtrl = ctrls[1];
-
+      scope.datepickerMode = attrs.datepickerMode;
       if ( ngModelCtrl ) {
         datepickerCtrl.init( ngModelCtrl );
       }
